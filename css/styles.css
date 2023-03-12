@@ -1,0 +1,431 @@
+:root {
+    --blue : #08526d;
+    --red:#ec1c23;
+    --white: #FFF;
+    --grey: #DDD;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+
+
+/* Start Upper Bar Section */
+.upper-bar {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px 0;
+    font-size: 20px;
+}
+/* End Upper Bar Section */
+
+
+
+
+
+/* Start Navbar Section */
+.navbar {
+    background-color:  #FFF;
+    padding: 15px 0;
+}
+.navbar .navbar-brand .elite {
+    color: var(--blue)
+}
+.navbar .navbar-brand .crop {
+    color: var(--red)
+}
+.navbar .navbar-toggler {
+    margin-top: 10px;
+}
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+.navbar .navbar-nav .nav-item {
+    margin-left:40px;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 20px;
+    color: var(--blue);
+}
+.navbar .navbar-nav .nav-link.active {
+    color: var(--red);
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--red);
+}
+/* End Navbar Section */
+
+
+
+/* Start Slider Section */
+.slider {
+    background-color: var(--grey);
+}
+.slider .carousel-inner {
+    display: flex;
+    align-items: center;
+}
+.slider .carousel-inner h1 {
+    position: absolute;
+    z-index: 3;
+    color: var(--white);
+    padding-left: 50px;
+    max-width: 90%;
+}
+.slider .carousel-inner h1 span {
+    background-color: var(--red);
+    padding: 0 10px;
+}
+.slider .carousel-inner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0, .6);
+}
+.slider .carousel-item img {
+    width:100%;
+    height: 100%;
+}
+/* End Slider Section */
+
+
+
+
+/* Start Features Section */
+.features .feature-item .icon  {
+    font-size: 42px;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.features .feature-item .icon:hover {
+    background-color: var(--blue);
+}
+.features .feature-item h6 {
+    color: var(--blue);
+}
+/* End Features Section */
+
+
+
+
+
+/* Start Overview Section */
+.overveiw {
+    background-color: #f0f5f7;
+}
+.overveiw h1 {
+    text-transform: uppercase;
+}
+.overveiw p:first-child {
+    font-size: 22px;
+}
+.overveiw p:nth-of-type(2) {
+    letter-spacing: 5px;
+}
+.overveiw button {
+    padding: 8px 30px;
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+}
+.overveiw button:hover {
+    background-color: var(--blue);
+}
+/* Start Overview Section */
+
+
+
+
+
+/* Start Featured Work Section */
+.featured-work ul li {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 6px 10px; 
+    border-radius: 10px ;
+}
+@media (max-width: 768px) {
+    .featured-work ul {
+        display: flex;
+        justify-content: center;
+    }
+    .featured-work ul li {
+        width: 60%;
+    }
+    .featured-work .container-md {
+        padding-left: 0;
+        padding-right:0;
+    }
+}
+.featured-work ul li.active, 
+.featured-work ul li:hover {
+    background-color: var(--red);
+}
+.featured-work .gallery img {
+    width: 100%;
+}
+/* End Featured Work Section */
+
+
+
+
+/* Start Latest Post */
+.latest-post {
+    background-color: #f0f5f7;
+}
+.latest-post .card .card-body h5 {
+    color: var(--blue);
+}
+.latest-post .card .card-body .date {
+    font-size: 15px;
+}
+.latest-post .card .card-body a {
+    text-decoration: none;
+    color: var(--red);
+}
+/* End Latest Post */
+
+
+
+/* Start Testimonials Section */
+.testimonials {
+    background-image: url('../img/Testimonials_background.webp');
+    background-size:cover;
+    height:500px;
+    position: relative;
+}
+.testimonials .overlay {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:2;
+    background-color: rgb(0,0,0,0.6)
+}
+.testimonials .carousel {
+    z-index:3;
+    height: 100%;
+}
+.testimonials .carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+}
+.testimonials .carousel .carousel-inner {
+    height:100%;
+}
+.testimonials .carousel .carousel-inner .carousel-caption {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+}
+.testimonials .carousel .carousel-inner {
+    display: flex;
+    align-items: center;
+}
+.testimonials .carousel .carousel-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.testimonials .carousel .carousel-item .role {
+    font-size:15px
+}
+.testimonials .carousel .carousel-item .caption-text {
+    font-size: 16px;
+}
+/* End Testimonials Section */
+
+
+
+
+
+
+/* Start Pricing Table Section */
+.pricing-table .card:hover {
+    position:relative;
+    top:-20px;
+}
+.pricing-table ul li:nth-child(2) {
+    background-color: #f1f3f5;
+    font-size:40px;
+    color: var(--blue);
+}
+.pricing-table ul li:nth-child(2):hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+.pricing-table ul li button {
+    color:var(--white);
+    background-color:var(--blue);
+    border:none;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.pricing-table ul li button:hover {
+    background-color:var(--red);
+}
+/* End Pricing Table Section */
+
+
+
+
+/* Start Why Choose Us Section */
+.why-choose .card .col-md-6:nth-child(2) {
+    display: flex;
+    flex-flow:column nowrap;
+}
+.why-choose .card .card-body{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    background-color: var(--blue);
+    color:var(--white);
+}
+.why-choose .card .card-body p {
+    font-size:16px;
+}
+.why-choose .card .card-body button {
+    color:var(--white);
+    background-color:var(--red);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.why-choose .card img {
+    width:100%;
+    height:100%;
+}
+/* End Why Choose Us Section */
+
+
+
+
+/* Start Statistics Section */
+.statistics .row .col svg {
+    font-size:80px;
+    color: var(--blue);
+}
+.statistics .row .col svg:hover {
+    color:var(--red);
+}
+.statistics .row .col p {
+    font-size:20px;
+    color: var(--blue);
+    font-weight:bold;
+}
+.statistics .row .col p:first-of-type {
+    color: var(--red);
+}
+/* End Statistics Section */
+
+
+
+
+/* Start Contact Us Section */
+.contact-us {
+    background-color: var(--red);
+    color: var(--white);
+}
+.contact-us .row button {
+    background:none;
+    color:var(--white);
+    border:1px solid var(--white);
+    letter-spacing:4px;
+    font-weight:light;
+}
+/* End Contact Us Section */
+
+
+
+/* Start Footer Section */
+.footer .container > span:first-of-type {
+    color: var(--blue);
+    margin-bottom:10px;
+}
+.footer .container > span:last-of-type {
+    color: var(--red)
+}
+.footer .container > a {
+    color:var(--blue);
+    text-decoration:none;
+}
+.footer .container > a:before {
+    font-family:"FontAwesome";
+    content: '\f138';
+    display: inline-block;
+    margin-right: 5px;
+}
+.footer .container > a:hover {
+    text-decoration:underline;
+    color: var(--red);
+}
+.footer .helpful-links .links ul li {
+    font-size:16px;
+    margin-bottom:10px;
+    color: var(--blue);
+}
+.footer .helpful-links .links ul li:before {
+    font-family:"FontAwesome";
+    content:"\f054";
+    display: inline-block;
+    margin-right: 5px;
+
+}
+.footer .helpful-links .links ul li:hover {
+    color: var(--red);
+}
+.footer .contact-info {
+    font-size:16px;
+}
+.footer .contact-info ul li {
+    margin-bottom:10px;
+}
+/* End Footer Section */
+
+
+
+
+
+/* Start Copyright Section */
+.copyright {
+    border-top:1px solid black;
+}
+
+.copyright .social-media ul li {
+    font-size:35px;
+    color: #7F7F7F;
+}
+.copyright .social-media ul li:hover {
+    cursor:pointer;
+}
+.copyright .social-media ul .fa-square-facebook:hover {
+    color: #1877F2;
+}
+.copyright .social-media ul .fa-square-twitter:hover {
+    color: #1D9BF0;
+}
+.copyright .social-media ul .fa-linkedin:hover {
+    color: #0A66C2;
+}
+.copyright .social-media ul .fa-square-github:hover {
+    color: #24292F;
+}
+.copyright .social-media ul .fa-square-youtube:hover {
+    color: #FF0000;
+}
+
+/* End Copyright Section */
