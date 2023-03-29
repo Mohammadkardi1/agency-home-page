@@ -257,7 +257,11 @@ body {
 /* Start Pricing Table Section */
 .pricing-table .card:hover {
     position:relative;
-    top:-20px;
+}
+@media(min-width:  768px) {
+    .pricing-table .card:hover {
+        top:-20px;
+    }
 }
 .pricing-table ul li:nth-child(2) {
     background-color: #f1f3f5;
